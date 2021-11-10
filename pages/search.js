@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import tw from 'tailwind-styled-components'
-import mapboxgl from '!mapbox-gl'; 
 import Link from 'next/link';
 
 

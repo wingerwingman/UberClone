@@ -1,3 +1,4 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
 export const carList = [
   {
     imgUrl: 'uberx.png',
@@ -25,3 +26,4 @@ export const carList = [
     multiplier: 2.8,
   }
 ]
+

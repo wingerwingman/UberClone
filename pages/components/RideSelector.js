@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import tw from "tailwind-styled-components";
-import { carList } from '../data/carList.js';
+import { carList } from '../../data/carList.js';
 
 const RideSelector = (props,{ pickupCoordinates, dropoffCoordinates}) => {
 
@@ -16,9 +16,10 @@ const RideSelector = (props,{ pickupCoordinates, dropoffCoordinates}) => {
         if(props.pickupCoordinates && props.dropoffCoordinates){
             getDirections(props.pickupCoordinates, props.dropoffCoordinates)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pickupCoordinates, dropoffCoordinates])
 
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     return (
         <Wrapper>
             <Title>Choose a Ride, or swipe up for more</Title>
